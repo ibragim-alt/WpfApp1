@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a0ce7bfc4c354730b57a3a37fa6a2b1d" Name="Diagram1" ZoomLevel="34" >
+        <EntityTypeShape EntityType="Agency.Agents" Width="1.5" PointX="3" PointY="7.375" />
+        <EntityTypeShape EntityType="Agency.Apartments" Width="1.5" PointX="12" PointY="3.5" />
+        <EntityTypeShape EntityType="Agency.Client" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="Agency.Demand" Width="1.5" PointX="5.25" PointY="5.25" />
+        <EntityTypeShape EntityType="Agency.DemandsApart" Width="1.5" PointX="7.5" PointY="5.25" />
+        <EntityTypeShape EntityType="Agency.DemandsHouse" Width="1.5" PointX="7.5" PointY="8.625" />
+        <EntityTypeShape EntityType="Agency.DemandsLands" Width="1.5" PointX="7.5" PointY="2.75" />
+        <EntityTypeShape EntityType="Agency.Districts" Width="1.5" PointX="9.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Agency.Houses" Width="1.5" PointX="12" PointY="6.25" />
+        <EntityTypeShape EntityType="Agency.Lands" Width="1.5" PointX="12" PointY="1.125" />
+        <EntityTypeShape EntityType="Agency.Objects" Width="1.5" PointX="9.75" PointY="3.25" />
+        <EntityTypeShape EntityType="Agency.Person" Width="1.5" PointX="0.75" PointY="5.875" />
+        <EntityTypeShape EntityType="Agency.sysdiagrams" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="Agency.TypeDemands" Width="1.5" PointX="3" PointY="2.125" />
+        <AssociationConnector Association="Agency.FK_Agents_Person" />
+        <AssociationConnector Association="Agency.FK_Demand_Agents" />
+        <AssociationConnector Association="Agency.FK_Apartments_Objects" />
+        <AssociationConnector Association="Agency.FK_Client_Person" />
+        <AssociationConnector Association="Agency.FK_Demand_Client" />
+        <AssociationConnector Association="Agency.FK_Demand_TypeDemands" />
+        <AssociationConnector Association="Agency.FK_DemandsApart_Demand" />
+        <AssociationConnector Association="Agency.FK_DemandsHouse_Demand" />
+        <AssociationConnector Association="Agency.FK_DemandsLands_Demand" />
+        <AssociationConnector Association="Agency.FK_Houses_Objects" />
+        <AssociationConnector Association="Agency.FK_Lands_Objects" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
